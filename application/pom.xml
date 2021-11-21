@@ -28,11 +28,22 @@
 			<version>${project.version}</version>
 		</dependency>
 		-->
+		
+<!-- refactor 1 -->
 <dependency>
 	<groupId>com.extensiblejava</groupId>
 	<artifactId>exa9147-bill</artifactId>
 	<version>${project.version}</version>
 </dependency>
+
+<!-- refactor 2 -->
+<dependency>
+	<groupId>com.extensiblejava</groupId>
+	<artifactId>exa9147-audit</artifactId>
+	<version>${project.version}</version>
+</dependency>
+
+
 
 	<!-- new multi-modules -->
 		<dependency>
