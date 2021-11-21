@@ -1,6 +1,6 @@
 package com.extensiblejava.bill;
 
-import com.extensiblejava.audit.*;
+import com.extensiblejava.audit.AuditFacade ; // refactoring 2 : AuditFacade est maintenant une interface
 import com.extensiblejava.financial.*;
 import java.math.*;
 // import com.extensiblejava.bill.data.*;
@@ -102,9 +102,10 @@ public class Bill {
 		}
 	}
 
-	public void audit() {
-		AuditFacade auditor = new AuditFacade();
+	public void audit(AuditFacade auditor) {
+		// AuditFacade auditor = new AuditFacade(); // refactoring 2
 		setAuditedAmount(auditor.audit(this));
+		
 	}
 
 	public void pay() {
