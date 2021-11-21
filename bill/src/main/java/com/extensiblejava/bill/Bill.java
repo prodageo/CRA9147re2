@@ -1,6 +1,5 @@
 package com.extensiblejava.bill;
 
-import com.extensiblejava.audit.AuditFacade ; // refactoring 2 : AuditFacade est maintenant une interface
 import com.extensiblejava.financial.*;
 import java.math.*;
 // import com.extensiblejava.bill.data.*;
